@@ -24,6 +24,8 @@ class Authenticator:
             self.last_success_login_at = f.readline()  # что-то не так
             self.errors_count = int(f.readline())
 
+            print()
+
     def authorize(self, login, password):
         if self.login == None:
             self.errors_count += 1
