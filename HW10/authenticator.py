@@ -26,6 +26,8 @@ class Authenticator:
 
             print()
 
+            pass
+
     def authorize(self, login, password):
         if self.login == None:
             self.errors_count += 1
